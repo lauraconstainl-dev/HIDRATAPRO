@@ -1,0 +1,203 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f8ff;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+header {
+    background-color: #2196f3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   MENU
+========================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   BIENVENIDA
+========================= */
+
+.bienvenida {
+    text-align: center;
+}
+
+.bienvenida h2 {
+    color: #1976d2;
+    margin-bottom: 15px;
+}
+
+.bienvenida p {
+    margin-bottom: 25px;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+button,
+.boton {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover,
+.boton:hover {
+    background-color: #1976d2;
+}
+
+/* =========================
+   FORMULARIOS
+========================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* =========================
+   CONSUMO
+========================= */
+
+.opciones-agua {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+/* =========================
+   PROGRESO
+========================= */
+
+.barra-progreso {
+    width: 100%;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.progreso-actual {
+    width: 60%;
+    height: 100%;
+    background-color: #2196f3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+footer {
+    text-align: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .opciones-agua {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
